@@ -1,10 +1,13 @@
 {
   "name": "engaging-tech-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "git@github.com:tbscanlon/engaging-tech-test-backend.git",
   "author": "tbscanlon <thomas.scanlon@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
   "dependencies": {
     "express": "^4.16.3"
   }
