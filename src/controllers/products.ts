@@ -9,3 +9,10 @@ products.get("/", (req: Request, res: Response) => {
     res.json(documents);
   });
 });
+
+products.get("/:id", (req: Request, res: Response) => {
+  ProductModel.findOne(req.params, (err, doc) => {
+    if (err) res.status(404);
+    res.json(doc);
+  });
+});
