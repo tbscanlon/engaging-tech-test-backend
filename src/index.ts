@@ -7,6 +7,6 @@ const app = express();
 
 app.use("/products", products);
 
-app.listen(PORT, () => {
+export const server = app.listen(PORT, () => {
   console.log(`Listening on ${PORT}`);
 });
